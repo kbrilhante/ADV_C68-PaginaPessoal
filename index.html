@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--esse código é a continuação da aula 60. colocamos a barra de navegação usando bootstrap-->
+<html>
+    <head>
+        <!--tags iniciais-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Passear!!</title>
+        <!--Bootstrap CSS-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+        <!--Bootstrap JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+        
+        <!-- boostrap old-->
+        <!-- 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">     
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        -->
+        
+        <!--css-->
+        <link rel="stylesheet" href="style.css">
+        <!--Fonte Google-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;200;300;400;500;700;800;900&family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <!--Ícones rodapé-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!---->
+    </head>
+    <body>
+        <!-- Menu -->
+        <!-- 
+        <ul id="menu">
+            <li class="links"><a href="#welcome">Início</a></li>
+            <li class="links"><a href="#bio">Sobre Nós</a></li>
+            <li class="links"><a href="#videos">Vídeos</a></li>
+            <li class="links"><a href="#wiki">Wikipedia</a></li>
+            <li class="links"><a href="#rodape">Contato</a></li>
+        </ul> 
+        -->
+
+        <!-- 
+            navbar-expand{-sm|-md|-lg|-xl|-xxl}
+            navbar-dark bg-dark 
+            navbar-light (deprecated) bg-light
+            (também pode usar um css)
+            fixed-top"> -->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Kiara e Rex</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+                        <a class="nav-link" href="#bio">Sobre Nós</a>
+                        <a class="nav-link" href="#videos">Vídeos</a>
+                        <a class="nav-link" href="#wiki">Wikipedia</a>
+                        <a class="nav-link" href="#rodape">Contato</a>
+                        <!-- <a class="nav-link disabled">Disabled</a> -->
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Sessão 1: welcome -->
+        <!-- Pedaço bonito que vai ficar no topo da tela. Vamos alterar via css -->
+        <section id="welcome">
+            <div class="parallax-inner">
+                <img src="kiara_rex.png" class="profile">
+                <h1>Nós somos a <span class="nome">Kiara</span> e o <span class="nome">Rex</span></h1>
+                <h2>Somos dois cachorrinhos fofinhos</h2>
+            </div>
+        </section>
+
+        <!-- Sessão 2: Bio -->
+        <section id="bio">
+            <h1>Sobre Nós</h1>
+            <div class="line"></div>
+            <p id="sobre">
+                Nós somos os cachorros pra professora Kah.
+                <br>
+                A Kiara é uma srd amarela que gosta de brincar de pegar e cabo de guerra. Ela também gosta muito de coçadinhas na barriga.
+                <br>
+                O Rex é um mestiço de poodle branquinho que gosta muito de passear. Mas não deixa ele te ouvir falar essa palavra que ele vem correndo. Ele também gosta de lembrar aos humanos da casa que a tigela de ração está vazia.
+            </p>
+        </section>
+        
+        <!-- Sessão 3: Videos -->
+        <section id="videos">
+            <h1>Vídeos</h1>
+            <div class="line"></div>
+            <iframe class="yt" width="560" height="315" src="https://www.youtube.com/embed/uxlHRjWS_CQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <iframe class="yt" width="560" height="315" src="https://www.youtube.com/embed/dW2utwg9oOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+        <!-- Sessão 4: Wiki -->
+        <section id="wiki">
+            <h1>Wikipedia</h1>
+            <div class="line"></div>
+            <iframe width="90%" height="800px" src="https://pt.wikipedia.org/wiki/C%C3%A3o" frameborder="0"></iframe>
+        </section>
+
+        <!-- Rodapé -->
+        <section id="rodape">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.2378522915064!2d-43.179434584434695!3d-22.94146584487843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f8bb3123e83%3A0xca2b8dd98135d73e!2sParque%20Canino!5e0!3m2!1spt-BR!2sbr!4v1653496627593!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div id="contato">
+                <a href="mailto:meuemail@gmail.com?Subject=Hello">
+                    <h3><i class="fa fa-envelope"></i>&nbsp;E-mail</h3>
+                </a>
+                <a href="https://www.instagram.com/kiara_e_rex/" target="_blank">
+                    <h3><i class="fa fa-instagram"></i>&nbsp;Instagram</h3>
+                </a>
+            </div>
+        </section>
+    </body>
+</html>
