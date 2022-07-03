@@ -1,16 +1,24 @@
-<nav class="navbar navbar-expand-lg bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="#">Home</a>
-        <a class="nav-link" href="#">Features</a>
-        <a class="nav-link" href="#">Pricing</a>
-        <a class="nav-link disabled">Disabled</a>
-      </div>
+<!-- 
+    navbar-expand{-sm|-md|-lg|-xl|-xxl}
+    navbar-dark bg-dark 
+    navbar-light (deprecated) bg-light
+    (também pode usar um css)
+    fixed-top"> -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Kiara e Rex</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+                <a class="nav-link" href="#bio">Sobre Nós</a>
+                <a class="nav-link" href="#videos">Vídeos</a>
+                <a class="nav-link" href="#wiki">Wikipedia</a>
+                <a class="nav-link" href="#rodape">Contato</a>
+                <!-- <a class="nav-link disabled">Disabled</a> -->
+            </div>
+        </div>
     </div>
-  </div>
 </nav>
